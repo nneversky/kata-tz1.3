@@ -1,8 +1,8 @@
 @font-face {
   font-family: "TTLakes";
   src: local("TTLakesCondensed"),
-    local("TTLakesCondensed-Light"),
-    url("styles/fonts/TTLakesCondensed-Light.woff") format("woff");
+    local("TTLakes-Regular"),
+    url("styles/fonts/TTLakes-Regular.woff") format("woff");
   font-weight: normal;
 }
 
@@ -27,9 +27,12 @@ body, html {
   font-family: "TTLakes", Arial, sans-serif;
   color: #1B1C21;
   font-weight: normal;
-  background-color: #f8f8f8;
   margin: 0;
   padding: 0;
+}
+
+* {
+  background-color: #f8f8f8;
 }
 
 .head__btn {
@@ -68,8 +71,8 @@ body, html {
   display: flex;
   height: 88px;
   border-bottom: 1px #D9FFF5 solid;
-  justify-content: space-around;
-
+  justify-content: center;
+  gap: 18px;
 }
 
 .head__left-side,
@@ -107,22 +110,10 @@ body, html {
   display: none;
 }
 
-.scroll-side-bar__fade-left {
-  position: absolute;
-  transform: rotate(180deg);
-  top: 184.5px;
-}
-
-.scroll-side-bar__fade-right {
-  position: absolute;
-  top: 183px;
-  left: 300px;
-}
-
 .side-bar-nav {
   white-space: nowrap;
   overflow-x: scroll;
-  max-width: 770px;
+  max-width: 1120px;
   display: flex;
   gap: 10px;
   padding-left: 20px;
@@ -188,12 +179,12 @@ body, html {
   display: block;
 }
 
-.photo-cps {
+.img-cps {
   height: auto;
   width: 100%;
 }
 
-.main__img {
+.description__picture {
   width: 100%;
   margin-top: 15px;
   margin-bottom: 40px;
@@ -201,7 +192,11 @@ body, html {
 
 @media (min-width: 768px) {
   body, html {
-    width: 768px;
+    min-width: 768px;
+  }
+
+  .head {
+    justify-content: space-between;
   }
 
   .head--hidden {
@@ -220,27 +215,28 @@ body, html {
     margin-right: 30px;
   }
 
-  .scroll-side-bar__fade-right {
-    position: absolute;
-    top: 183px;
-    left: 750px;
-  }
-
   .about__description {
-    width: 312px;
-    height: 139px;
+    width: 90%;
+    height: 45%;
   }
 
   .about {
-    width: 312px;
-    margin-left: 20px;
-    margin-right: 40px;
+    display: flex;
+    width: 100%;
+    height: 300px;
+    flex-direction: column;
+    align-self: self-start;
   }
 
-  .photo-cps {
-    width: 360px;
-    height: 208px;
+  .img-cps {
     border-radius: 8px;
+    height: auto;
+    width: 90%;
+  }
+
+  .description__picture {
+    width: 100%;
+    height: auto;
   }
 
   .about__read-more {
@@ -248,9 +244,9 @@ body, html {
   }
 
   .description__site {
-    width: 720px;
+    width: 100%;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   @media (min-width: 1120px) {
@@ -301,15 +297,9 @@ body, html {
       width: 490px;
     }
 
-    .photo-cps {
+    .img-cps {
       width: 532px;
-      height: 307px;
       border-radius: 8px;
-    }
-
-    .scroll-side-bar__fade-left,
-    .scroll-side-bar__fade-right {
-      display: none;
     }
 
     .description__site {
