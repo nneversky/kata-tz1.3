@@ -9,73 +9,59 @@
 <body>
   <header class="head">
     <div class="head__left-side">
-      <img src="styles/pictures/menu-ic.svg" class="head__menu" alt="menu">
-      <img src="styles/pictures/border-line.svg" class="head__border-line el-768px">
-      <img src="styles/pictures/logo.svg" class="head__logo" alt="logo">
+      <button class="head__menu head__btn"></button>
+      <img src="styles/pictures/border-line.svg" class="head__border-line head--hidden">
+      <a href="#"><img src="styles/pictures/logo.svg" class="head__logo" alt="logo"></a>
     </div>
-    <img src="styles/pictures/border-line.svg" class="head__border-line border-el-320px">
+    <img src="styles/pictures/border-line.svg" class="head__border-line border-line--hidden">
     <div class="head__right-side">
-      <img src="styles/pictures/call-ic.svg" class="head__call el-768px" alt="call">
-      <img src="styles/pictures/chat-ic.svg" class="head__chat el-768px" alt="chat">
-      <img src="styles/pictures/profile-ic.svg" class="head__profile el-768px" alt="profile">
-      <img src="styles/pictures/border-line.svg" class="head__border-line el-768px">
-      <img src="styles/pictures/settings.svg" class="head__settings" alt="settings">
-      <img src="styles/pictures/search.svg" class="head__search" alt="search">
+      <button class="head__call head--hidden head__btn"></button>
+      <button class="head__chat head--hidden head__btn"></button>
+      <button class="head__profile head--hidden head__btn"></button>
+      <img src="styles/pictures/border-line.svg" class="head__border-line head--hidden">
+      <button class="head__settings head__btn"></button>
+      <button class="head__search head__btn"></button>
     </div>
   </header>
   <main class="main">
     <div class="title">
-      <div class="title__tag">
+      <div class="title__service">
         <img class="title__left-border" src="styles/pictures/left-border.svg" alt="left border">
         <p class="title__text-service">Услуги и сервисы</p>
       </div>
-      <div class="title__settings">
-        <div class="tag">
-          <p class="tag__text">Оставить заявку</p>
-          <img src="styles/pictures/settings.svg" class="head__settings" alt="settings">
+      <div class="title__buttons">
+        <div class="btn btn--settings">
+          <p class="btn__text">Оставить заявку</p>
+          <button class="head__settings head__btn"></button>
         </div>
-        <div class="tag">
-          <p class="tag__text">Статус ремонта</p>
-          <img src="styles/pictures/search.svg" class="head__search" alt="search">
+        <div class="btn btn--search">
+          <p class="btn__text">Статус ремонта</p>
+          <button class="head__search head__btn"></button>
         </div>
       </div>
     </div>
     <div class="scroll-side-bar">
-      <img class="scroll-side-bar_fade2" src="styles/pictures/fade.svg" alt="fade effect">
-      <img class="scroll-side-bar_fade1" src="styles/pictures/fade.svg" alt="fade effect">
-      <aside class="side-bar-btn">
-        <button class="side-bar-btn__button1 active_btn">
-          <span class="side-bar-btn__text">Ремонтируемые устройства</span>
-        </button>
-        <button class="side-bar-btn__button2">
-          <span class="side-bar-btn__text">Дополнительные услуги</span>
-        </button>
-        <button class="side-bar-btn__button3">
-          <span class="side-bar-btn__text">Цены на услуги</span>
-        </button>
-        <button class="side-bar-btn__button4">
-          <span class="side-bar-btn__text">Специальные цены</span>
-        </button>
-        <button class="side-bar-btn__button5">
-          <span class="side-bar-btn__text">Адреса сервисных центров</span>
-        </button>
-        <button class="side-bar-btn__button6">
-          <span class="side-bar-btn__text">Отзывы</span>
-        </button>
-      </aside>
+      <img class="scroll-side-bar__fade-left" src="styles/pictures/fade.svg" alt="fade effect">
+      <img class="scroll-side-bar__fade-right" src="styles/pictures/fade.svg" alt="fade effect">
+      <nav class="side-bar-nav">
+        <a href="#" class="side-bar-links side-bar-link--devices">Ремонтируемые устройства</a>
+        <a href="#" class="side-bar-links side-bar-link--services">Дополнительные услуги</a>
+        <a href="#" class="side-bar-links side-bar-link--price-services">Цены на услуги</a>
+        <a href="#" class="side-bar-links side-bar-link--price">Специальные цены</a>
+        <a href="#" class="side-bar-links side-bar-link--address">Адреса сервисных центров</a>
+        <a href="#" class="side-bar-links side-bar-link--reviews">Отзывы</a>
+      </nav>
     </div>
     <div class="about">
       <div class="about__description">
         <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
         <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
       </div>
-        <div class="read-more">
-        <img class="read-more__img" src="styles/pictures/arrow.svg" alt="arrow read more">
-        <p class="read-more__text">Читать далее</p>
-      </div>
-      <img src="styles/pictures/picture_CPS.png" class="main__image_el-760px">
+      <button class="about__read-more">Читать далее</button>
     </div>
-    <img src="styles/pictures/picture_CPS.png" class="main__image">
+    <div class="main__img">
+      <img class="photo-cps" srcset="" src="./styles/pictures/picture_CPS.png" alt="office cps">
+    </div>
   </main>
 </body>
 </html>
