@@ -23,7 +23,7 @@
 }
 
 body, html {
-  width: 320px;
+  min-width: 320px;
   font-family: "TTLakes", Arial, sans-serif;
   color: #1B1C21;
   font-weight: normal;
@@ -68,6 +68,8 @@ body, html {
   display: flex;
   height: 88px;
   border-bottom: 1px #D9FFF5 solid;
+  justify-content: space-around;
+
 }
 
 .head__left-side,
@@ -75,7 +77,6 @@ body, html {
   align-items: center;
   display: flex;
   gap: 18px;
-  margin: 0 auto;
 }
 
 .head--hidden {
@@ -142,20 +143,23 @@ body, html {
   font-weight: 600;
   line-height: 24px;
   letter-spacing: -0.2px;
+  margin-bottom: 10px;
 }
 
 .about {
   margin: 0 auto;
+  width: 100%;
 }
 
 .about__description {
   overflow: hidden;
-  width: 288px;
+  width: 90%;
   margin: 0 auto;
-  height: 95px;
+  height: 100px;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.2px;
+  margin-bottom: 10px;
 }
 
 .about__read-more {
@@ -165,12 +169,14 @@ body, html {
   gap: 13px;
   border: none;
   font-weight: 400;
+  margin-left: 15px;
 }
 
 .description__site {
-  width: 320px;
+  min-width: 320px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .about__read-more::before {
@@ -183,11 +189,12 @@ body, html {
 }
 
 .photo-cps {
-  width: 320px;
-  height: 176px;
+  height: auto;
+  width: 100%;
 }
 
 .main__img {
+  width: 100%;
   margin-top: 15px;
   margin-bottom: 40px;
 }
@@ -248,6 +255,7 @@ body, html {
 
   @media (min-width: 1120px) {
     body, html {
+      margin: 0 auto;
       width: 1096px;
     }
 
